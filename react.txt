@@ -1,0 +1,209 @@
+The React. js  is an open-source JavaScript library developed by Facebook. It's used for building interactive user interfaces and web applications quickly and efficiently.
+React is a User Interface (UI) library
+React is a tool for building UI components
+
+
+How react works ?
+React creates a virtual DOM. When state changes in a component it firstly runs a "diffing" algorithm, which identifies what has changed in the virtual DOM. The second step is reconciliation, where it updates the DOM with the results of diff.
+
+
+JSX:
+JSX stands for JavaScript XML
+
+
+Babel : 
+Babel is a JavaScript compiler that can translate markup or programming languages into JavaScript.
+With Babel, you can use the newest features of JavaScript (ES6 - ECMAScript 2015).
+Babel is available for different conversions. React uses Babel to convert JSX into JavaScript.
+
+
+Webpack : 
+Webpack in react is a JavaScript module bundler that is commonly used with React to bundle and manage dependencies. It takes all of the individual JavaScript files and other assets in a project, such as images and CSS, and combines them into a single bundle that can be loaded by the browser
+
+React DOM Render :
+The method ReactDom.render() is used to render (display) HTML elements:
+
+Root : 
+React applications are usually built around a single HTML element.
+React developers often call this the root node (root element)
+
+
+why we use react ?
+Because of its component-based approach and virtual DOM, React is a lot faster than other frameworks.
+One of the main benefits of using React JS is its potential to reuse components. It saves time for developers as they don't have to write various codes for the same features. Furthermore, if any changes are made in any particular part, it will not affect other parts of the application.
+
+
+What Is a Single Page Application?
+A single page application is a single page (hence the name) where a lot of information stays the same and only a few pieces need to be updated at a time.
+For example, when you browse through your email, you’ll notice that not much changes during navigation — the sidebar and header remain untouched as you go through your inbox.
+The SPA only sends what you need with each click, and your browser renders that information. This is different than a traditional page load where the server rerenders a full page with every click you make and sends it to your browser.
+
+A single page application is a website or web application that dynamically rewrites a current web page with new data from the web server, instead of the default method of a web browser loading entire new pages
+
+
+
+Advantages of react : 
+Component Reusability
+Simplified Scripting.
+Component-based architecture.
+Faster rendering.
+Stable Code Structure.
+SEO-enabled.
+Handy developer tools.
+Mobile app development.
+Easy to Learn, Easy to Use.
+Redux Facility
+Comes with JSX
+Effortless Maintenance
+
+disadavantage : 
+the pace of development.
+lack of proper documentation
+development speed
+
+
+What is npm and why it is used?
+npm stands for Node Package Manager. It's a library and registry for JavaScript software packages. npm also has command-line tools to help you install the different packages and manage their dependencies.
+npm is the world's largest software registry.
+use npm to share and borrow packages,
+
+
+
+What is difference between functional and class components?
+
+A functional component is just a plain JavaScript pure function that accepts props as an argument and returns a React element(JSX). 
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+A class component requires you to extend from React. Component and create a render function that returns a React element. There is no render method used in functional components
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+
+
+VIRTUAL DOM:
+Virtual DOM is a virtual representation of the real DOM. When state changes occur, the virtual DOM is updated and the previous and current version of virtual DOM is compared. This is called “diffing”. The virtual DOM then sends a batch update to the real DOM to update the UI.
+
+
+How does React application work?
+React creates a virtual DOM in memory to update the browser's DOM. The virtual DOM will try to find the most efficient way to update the browser's DOM. Unlike browser DOM elements.
+
+
+
+USAGE OF KEYS 
+A “key” is a special string attribute you need to include when creating lists of elements in React. Keys are used in React to identify which items in the list are changed, updated, or deleted. Keys are used to give an identity to the elements in the lists
+
+
+What is conditional rendering in Reactjs?
+In React, conditional rendering is the process of displaying different content based on certain conditions or states.
+
+
+EVENT HANDLING
+React lets you add event handlers to your JSX. Event handlers are your own functions that will be triggered in response to interactions like clicking, hovering, focusing form inputs, and so on
+
+
+props vs state : 
+Props are used to pass data from a parent component to a child component, while state is used to manage data within a component. 
+Props are immutable and cannot be changed within a component, while state is mutable and can be updated using the setState function.
+
+
+
+component life cycle : 
+1. Initial
+2. Mounting phase
+    Components render for the first time,created and inserted into the DOM
+    1. Constructor() *
+    2. getDerivedStateFromProps()
+    3. render() *
+    4. componentDidMount() *
+3. Updating phase
+    If any interactions happened to the component through props or state, component will update.
+    This is the re-render process and comes from the DOM. 
+    1. getDerivedStateFromProps()
+    2. shouldComponentUpdate() *
+    3. render() *
+    4. getSnapshotBeforeUpdate()
+    5. componentDidUpdate() *
+4. Unmounting phase
+    Component is being removed from the DOM.
+    1.componentWillUnmount() *
+
+
+
+stateful vs stateless : 
+stateful - keepig track of changing data,
+stateless is doesn't change, 
+
+
+reusable component : 
+In React, a reusable component is a piece of UI that can be used in various parts of an application to build more than one UI instance
+
+
+passig dynamic data
+Props can be passed as attributes to components in JSX, and we receive the props as arguments within the component, just like parameters and arguments passed to a function in JavaScript. 
+
+
+hooks : 
+Hooks let you use different React features from your components. You can either use the built-in Hooks or combine them to build your own.
+
+
+What is useState in Reactjs?
+useState is React Hook that allows you to add state to a functional component. It returns an array with two values: the current state and a function to update it. The Hook takes an initial state value as an argument and returns an updated state value whenever the setter function is called.
+
+
+What is the useEffect in React?
+The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+
+
+What is props drilling in React with example?
+What is prop drilling in React? - DEV Community
+Prop drilling occurs when a parent component passes data down to its children and then those children pass the same data down to their own children
+
+
+router dom
+React Router DOM is an npm package that enables you to implement dynamic routing in a web app. It allows you to display pages and allow users to navigate them. 
+navigating without refreshing the page
+Browser router
+link
+navigate
+route
+routes
+
+
+What is the context API in React ?
+Context API allows data to be passed through a component tree without having to pass props manually at every level. This makes it easier to share data between components.
+it is used to manage state globally
+flow of : 
+createContext,
+useContext => provide
+consumer
+
+
+
+useRef : 
+useRef is a hook that allows to directly create a reference to the DOM element in functional component
+in class component we use createRef which is similar to useRef.
+
+
+useReducer :
+The useReducer Hook returns the current state and a dispatch method.
+The useReducer Hook is used to store and update states, just like the useState Hook.
+useReducer returns an array that holds the current state value and a dispatch function
+
+
+What is Axios for React?
+Introduction to Axios: Axios, which is a popular library is mainly used to send asynchronous HTTP requests to REST endpoints. This library is very useful to perform CRUD operations. This popular library is used to communicate with the backend. Axios supports the Promise API, native to JS ES6
+
+
+What is called Redux?
+Redux is a state managing library used in JavaScript apps. It simply manages the state of your application or in other words, it is used to manage the data of the application.
+Redux is an open-source JavaScript library used to manage application state. React uses Redux for building the user interface. It was first introduced by Dan Abramov and Andrew Clark in 2015.
+React Redux is the official React binding for Redux. It allows React components to read data from a Redux Store, and dispatch Actions to the Store to update data. Redux helps apps to scale by providing a sensible way to manage state through a unidirectional data flow model. React Redux is conceptually simple. It subscribes to the Redux store, checks to see if the data which your component wants have changed, and re-renders your component.
+
+
+flow of redux : 
+component, event trigger, dispatch the event, reducer, state updated, return to UI.
+
+
