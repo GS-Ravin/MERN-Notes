@@ -1,0 +1,105 @@
+Q.1How does React work
+React creates a virtual DOM. When state changes in a component it firstly runs a "diffing" algorithm, which identifies what has changed in the virtual DOM. The second step is reconciliation, where it updates the DOM with the results of diff.
+
+
+Q.2What is props in React
+Props are inputs to a React component
+
+
+Q.3What Is Replication In MongoDB
+Replication is the process of synchronizing data across multiple servers. Replication provides redundancy and increases data availability. With multiple copies of data on different database servers, replication protects a database from the loss of a single server. Replication also allows you to recover from hardware failure and service interruptions
+
+
+Q.4What are Higher-Order components
+A higher-order component (HOC) is a function that takes a component and returns a new component. Basically, it’s a pattern that is derived from React’s compositional nature We call them as “pure’ components” because they can accept any dynamically provided child component but they won’t modify or copy any behavior from their input components.
+
+
+5. asynchronous API
+An asynchronous API, or async API, is a type of application programming interface (API) that allows for non-blocking, concurrent execution of operations. This means that users can conduct multiple requests at the same time without waiting for the previous request to execute. The server may process multiple requests at the same time, decreasing the API's overall response time
+
+
+Q.6What is Callback Hell
+The asynchronous function requires callbacks as a return parameter. When multiple asynchronous functions are chained together then callback hell situation comes up.
+
+
+Q.7What is Reconciliation
+When a component’s props or state change, React decides whether an actual DOM update is necessary by comparing the newly returned element with the previously rendered one. When they are not equal, React will update the DOM. This process is called reconciliation.
+
+
+Q.8Does Mongodb Support Foreign Key Constraints
+No. MongoDB does not support such relationships.
+
+
+
+Q.9How Node prevents blocking code
+It prevents blocking by allowing other code to be executed in the meantime.
+
+
+10. How can you achieve transaction and locking in MongoDB
+In MongoDB, locks are acquired at the transaction level. Only write operations will lock the associated document, while read operations will not. Locks are released only when the transaction is completed
+
+
+11. How does Node.js handle child threads
+Node.js, in its essence, is a single thread process. It does not expose child threads and thread management methods to the developer.
+
+
+12. How to avoid Callback Hell in Node.js
+ Node js callback hell can be avoided using Promises and async / await.
+
+
+13. If Node.js is single threaded then how it handles concurrency
+Node.js is a single-threaded event loop architecture, which means that it can only execute one task at a time. However, it can still handle multiple requests simultaneously by using an event loop.
+
+
+14. Pure component
+Pure Components in React are the components which do not re-renders when the value of state and props has been updated with the same values. If the value of the previous state or props and the new state or props is the same, the component is not re-rendered
+
+
+15. What is Stream and what are types of Streams available in Node.js
+Node. js streams are a powerful feature that allows developers to handle data flow efficiently, especially when dealing with large data sets. There are four types of streams in Node. js: Readable streams, Writable streams, Duplex streams, and Transform streams.
+
+
+16. Virtual DOM: Used for solving performance issues. Shadow DOM: Used for encapsulating and isolating elements
+
+
+17. What's the difference between a "smart" component and a "dumb" component
+Smart components manage their state or in a Redux environment are connected to the Redux store. Dumb components are driven completely by their props passed in from their parent and maintain no state of their own.
+
+
+18. REPL
+REPL stands for Read Eval Print Loop and it represents a computer environment like a Windows console or Unix/Linux shell
+
+
+19. How to check if an object is an array or not in JavaScript
+Array.isArray()
+
+
+20. List down the two arguments that async.queue takes as input in Node.js
+Task Function and Concurrency Value
+
+
+21. Node.js buffers
+The buffers module provides a way of handling streams of binary data. The Buffer object is a global object in Node. js, and it is not necessary to import it using the require keyword.
+
+
+22. A replica set in MongoDB is a group of mongod processes that maintain the same data set
+
+
+
+23. What is Scaffolding in Express.js
+Scaffolding is creating the skeleton structure of application. There are 2 way to do this: Express application generator and Yeoman
+
+
+
+24. What is routing and how routing works in Express.js
+Routing refers to determining how an application responds to a client request to a particular endpoint, which is a URI (or path) and a specific HTTP request method (GET, POST, and so on). Each route can have one or more handler functions, which are executed when the route is matched
+
+
+
+25.Which Template Engines Does Express Support
+Express supports any template engine that conforms with the (path, locals, callback) signature.
+
+
+26. How Do I Render Plain Html in Express
+There’s no need to “render” HTML with the res.render() function. If you have a specific file, use the res.sendFile() function. If you are serving many assets from a directory, use the express.static() middleware function
+

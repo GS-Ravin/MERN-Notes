@@ -1,0 +1,62 @@
+What is NodeJS and why it is used?
+Async programming language, Non - blocking event loop
+Node. js is a single-threaded, open-source, cross-platform runtime environment for building fast and scalable server-side and networking applications. It runs on the V8 JavaScript engine
+
+
+what is npm ? 
+npm is a library and registry for JavaScript software packages. It has command-line tools to help you install the different packages and manage their dependencies. npm also allows open-source web developers to share and borrow packages for app development
+
+
+middleware i nodejs
+Middleware in Node.js is a function that is executed between the request and response cycles of Node.js execution. It has access to both the request and response objects, and the next middleware function
+
+
+express js : 
+Express is a web application framework for Node.js, a popular open-source, cross-platform runtime environment that allows you to create fast, scalable, and single-page or multi-page web applications.
+Express.js is a server-side application framework that wraps HTTP requests and responses, and makes it easy to map URLs to server-side functions.
+
+features : 
+Routing,
+Templating,
+middleware,
+error handling,
+documentation
+
+
+req.params = params
+req.searchQuery = query
+
+
+Dotenv :
+Dotenv is a module that loads environment variables from a .env file into process.env. It's a popular choice for managing environment variables, and it's a lightweight npm package. 
+Dotenv is a good way to keep passwords, API keys, and other sensitive data out of your code. It allows you to create environment variables in a .env file instead of putting them in your code
+
+
+
+bcrypt : 
+Bcrypt is a password hashing algorithm designed by Niels Provos and David Mazières based on the Blowfish cipher. The name “bcrypt” is made of two parts: b and crypt, where b stands for Blowfish and crypt is the name of the hashing function used by the Unix password system
+
+
+JWt : 
+A JSON Web Token, popularly known as JWT, is an open standard that defines a compact way for securely sharing information between two parties: a client and a server. 
+
+
+CORS : 
+Cross-origin resource sharing (CORS) is a browser security feature that allows controlled access to resources located outside of a given domain. CORS is typically required to build web applications that access APIs hosted on a different domain or origin
+CORS is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources.
+
+
+Authentication :
+Authentication is the process of verifying the identity of a user
+
+Authorization : 
+authorization is the process of determining what resources a user has access to.
+
+way to implement authentication and authorization in Node.js is to use JSON Web Tokens (JWTs). JWTs are a secure way to store user credentials and information.
+Once you have implemented authentication and authorization in your Node.js application, you can use it to protect your resources. For example, you can use authentication to restrict access to certain pages or resources. You can also use authorization to control what actions a user can take
+
+
+MOngoose : 
+Mongoose aims to solve is allowing developers to enforce a specific schema at the application layer
+Mongoose is a Node. js-based Object Data Modeling (ODM) library for MongoDB.
+which means that by using Mongoose, you can define objects with a strongly-typed schema that can be further mapped to a MongoDB document.
