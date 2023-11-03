@@ -1,6 +1,15 @@
 JavaScript is a scripting language for creating dynamic web page content
 it is a sychoronous programing language, single - threaded
 object-oriented based pogramming language
+
+JavaScript (JS) is a text-based programming language used both on the client-side and server-side that allows you to create dynamic and interactive websites. It is one of the three core technologies of the World Wide Web, alongside HTML and CSS.
+JavaScript was first introduced in 1995 by Netscape as LiveScript. It was later renamed JavaScript to avoid confusion with the LiveScript programming language.
+JavaScript is a high-level, interpreted language. This means that it is not compiled into machine code before it is executed, but instead it is interpreted by the browser. This makes it faster and easier to write JavaScript code.
+JavaScript is a dynamic language. This means that the type of a variable can change at runtime. This can be useful for creating flexible and adaptable code.
+JavaScript is an object-oriented language. This means that it uses objects to store data and functionality. Objects are made up of properties and methods.
+JavaScript is a powerful and versatile language that can be used to create a wide variety of websites and applications. It is one of the most popular programming languages in the world and is used by millions of developers.
+
+
 async returns the promise
 
 callback
